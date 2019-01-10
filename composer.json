@@ -1,5 +1,5 @@
 {
-    "name": "vich/uploader-bundle",
+    "name": "prolix/uploader-bundle",
     "type": "symfony-bundle",
     "description": "Ease file uploads attached to entities",
     "keywords": [
