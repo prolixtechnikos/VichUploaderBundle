@@ -31,7 +31,7 @@ class AnnotationDriver implements AdvancedDriverInterface
         $this->reader = $reader;
     }
 
-    public function loadMetadataForClass(\ReflectionClass $class)
+    public function loadMetadataForClass(\ReflectionClass $class): ?\Metadata\ClassMetadata
     {
         if (!$this->isUploadable($class)) {
             return;
@@ -65,7 +65,7 @@ class AnnotationDriver implements AdvancedDriverInterface
         return $classMetadata;
     }
 
-    public function getAllClassNames()
+    public function getAllClassNames(): array
     {
         return [];
     }
