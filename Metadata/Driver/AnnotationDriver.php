@@ -34,7 +34,7 @@ class AnnotationDriver implements AdvancedDriverInterface
     public function loadMetadataForClass(\ReflectionClass $class): ?\Metadata\ClassMetadata
     {
         if (!$this->isUploadable($class)) {
-            return;
+            return null;
         }
 
         $classMetadata = new ClassMetadata($class->name);
