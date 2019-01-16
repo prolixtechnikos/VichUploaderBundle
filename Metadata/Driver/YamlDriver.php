@@ -15,7 +15,7 @@ class YamlDriver extends AbstractFileDriver
     /**
      * {@inheritdoc}
      */
-    protected function loadMetadataFromFile(\ReflectionClass $class, $file): ?\Metadata\ClassMetadata
+    protected function loadMetadataFromFile(\ReflectionClass $class, string $file): ?\Metadata\ClassMetadata
     {
         $config = $this->loadMappingFile($file);
         $className = $this->guessClassName($file, $config, $class);
