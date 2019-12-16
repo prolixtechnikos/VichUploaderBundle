@@ -22,8 +22,10 @@ class Configuration implements ConfigurationInterface
     {
         if (Kernel::VERSION_ID >= 40200) {
             $builder = new TreeBuilder('vich_uploader');
+            $root = $builder->getRootNode();
         } else {
             $builder = new TreeBuilder();
+            $root = $builder->root('vich_uploader');
         }
         $root = $builder->root('vich_uploader');
         $this->addGeneralSection($root);
