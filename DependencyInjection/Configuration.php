@@ -27,7 +27,6 @@ class Configuration implements ConfigurationInterface
             $builder = new TreeBuilder();
             $root = $builder->root('vich_uploader');
         }
-        $root = $builder->root('vich_uploader');
         $this->addGeneralSection($root);
         $this->addMetadataSection($root);
         $this->addMappingsSection($root);
