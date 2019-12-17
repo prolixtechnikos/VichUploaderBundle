@@ -3,13 +3,14 @@
 namespace Vich\UploaderBundle\Twig\Extension;
 
 use Vich\UploaderBundle\Templating\Helper\UploaderHelper;
+use Twig\Extension\AbstractExtension;
 
 /**
  * UploaderExtension.
  *
  * @author Dustin Dobervich <ddobervich@gmail.com>
  */
-class UploaderExtension extends \Twig_Extension
+class UploaderExtension extends AbstractExtension
 {
     /**
      * @var UploaderHelper
