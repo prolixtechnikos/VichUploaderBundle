@@ -2,7 +2,7 @@
 
 namespace Vich\UploaderBundle\Event;
 
-use Symfony\Component\EventDispatcher\Event as BaseEvent;
+use Symfony\Contracts\EventDispatcher\Event as BaseEvent;
 use Vich\UploaderBundle\Mapping\PropertyMapping;
 
 /**
